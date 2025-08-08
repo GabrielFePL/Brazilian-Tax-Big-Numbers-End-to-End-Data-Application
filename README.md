@@ -19,8 +19,8 @@ This step allows:
 - Continuous pipeline maintenance without manual intervention.
 - Scheduled scripts based on the project's periodicity for dynamic data updates.
 
-Resource data URL:
-[https://dados.gov.br/dados/conjuntos-dados/importacoes-e-exportacoes](https://dados.gov.br/dados/conjuntos-dados/grandes-nmeros-do-imposto-de-renda-da-pessoa-fsica)
+Data source URL:
+[Data Source](https://dados.gov.br/dados/conjuntos-dados/grandes-nmeros-do-imposto-de-renda-da-pessoa-fsica)
 
 ---
 
