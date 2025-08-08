@@ -20,7 +20,7 @@ This step allows:
 - Scheduled scripts based on the project's periodicity for dynamic data updates.
 
 Data source URL:
-[Data Source](https://dados.gov.br/dados/conjuntos-dados/grandes-nmeros-do-imposto-de-renda-da-pessoa-fsica)
+https://dados.gov.br/dados/conjuntos-dados/grandes-nmeros-do-imposto-de-renda-da-pessoa-fsica
 
 ---
 
