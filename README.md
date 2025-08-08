@@ -72,6 +72,8 @@ Tool integrated with Databricks that allows:
 ---
 
 ## 9. Databricks Dashboards Application
-- Visualization and generation of insights.
+Development of interactive dashboards within Databricks for real-time data visualization and insight generation.
+- These dashboards consume curated data from the Gold layer.
+- Enable dynamic exploration, performance monitoring, and decision-making support through intuitive visual representations.
 
 ---
