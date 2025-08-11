@@ -4,7 +4,7 @@ End-to-end data pipeline using Databricks for Brazilian tax data analysis: autom
 ## GitHub Task Board
 Task Board URL: https://github.com/users/GabrielFePL/projects/5/views/1
 
-## Architecture
+## Steps and Architecture
 
 ### 1. Environment Setup
 Preparation of development environments; tools such as Databricks and GitHub are configured according to the data pipeline.
