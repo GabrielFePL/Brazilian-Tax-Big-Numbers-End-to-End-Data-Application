@@ -11,36 +11,18 @@ Preparation of development environments; tools such as Databricks and GitHub are
 
 ---
 
-### 2. Data Collection with Web Scraping
-Automation of data collection on Brazilian tax big numbers using web scraping techniques.
-
-This step allows:
-- Periodic extraction of updated data.
-- Continuous pipeline maintenance without manual intervention.
-- Scheduled scripts based on the project's periodicity for dynamic data updates.
+### 2. Data Storage in Unity Catalog
+Raw data obtained through scraping is saved as source files in the **Unity Catalog**, and future medallion architecture layers are saved as delta tables, with the following objectives:
+- Centralized storage with secure access control.
+- Integration with Databricks for automated data access.
+- Support for data governance and traceability.
 
 Data source URL:
 https://dados.gov.br/dados/conjuntos-dados/grandes-nmeros-do-imposto-de-renda-da-pessoa-fsica
 
 ---
 
-### 3. Storage in Unity Catalog
-Raw data obtained through scraping is saved as source files in the **Unity Catalog**, and future medallion architecture layers are saved as delta tables, with the following objectives:
-- Centralized storage with secure access control.
-- Integration with Databricks for automated data access.
-- Support for data governance and traceability.
-
----
-
-### 4. Data Ingestion with Databricks Workflows
-Use of **Databricks Job Workflows** for ingesting and transforming data:
-- Orchestrated pipeline to transform raw data into structured data.
-- Scheduled execution.
-- Compatible with the Medallion architecture (bronze, silver, gold).
-
----
-
-### 5. Medallion Architecture
+### 3. Medallion Architecture
 Implementation of the Medallion architecture in Databricks to ensure:
 - **Bronze**: ingestion of raw data.
 - **Silver**: cleaning, standardization, and enrichment.
@@ -49,7 +31,7 @@ Implementation of the Medallion architecture in Databricks to ensure:
 
 ---
 
-### 6. Star Schema Modeling
+### 4. Star Schema Modeling
 Dimensional modeling focused on analytical performance:
 - **Dimension Tables (dim)**
 - **Fact Table (fact_tax)**
@@ -57,7 +39,7 @@ Dimensional modeling focused on analytical performance:
 
 ---
 
-### 7. Unity Catalog Documentation
+### 5. Unity Catalog Documentation
 Use of descriptions and tags to:
 - Facilitate understanding and use of the tables.
 - Enable Genie functionality with contextual metadata.
@@ -65,7 +47,7 @@ Use of descriptions and tags to:
 
 ---
 
-### 8. Genie (Data Assistant)
+### 6. Genie (Data Assistant)
 Tool integrated with Databricks that allows:
 - Execution of common queries through natural language.
 - Support for frequently asked questions about the data (FAQ).
@@ -73,9 +55,15 @@ Tool integrated with Databricks that allows:
 
 ---
 
-### 9. Databricks Dashboards Application
+### 7. Databricks Dashboards Application
 Development of interactive dashboards within Databricks for real-time data visualization and insight generation.
 - These dashboards consume curated data from the Gold layer.
 - Enable dynamic exploration, performance monitoring, and decision-making support through intuitive visual representations.
 
 ---
+
+### 8. Data Ingestion with Databricks Workflows
+Use of **Databricks Job Workflows** for ingesting and transforming data:
+- Orchestrated pipeline to transform raw data into structured data.
+- Scheduled execution.
+- Compatible with the Medallion architecture (bronze, silver, gold).
