@@ -90,3 +90,20 @@ def count_nulls(df: DataFrame) -> DataFrame:
     null_counts = df.select([sum(col(c).isNull().cast("int")).alias(c) for c in df.columns])
 
     return null_counts
+
+def fill_nulls(df: DataFrame, exclude_columns: List[str] = []) -> DataFrame:
+    """
+    Fills null values with 0 in columns not in the exclusion list.
+
+    Args:
+        df (DataFrame): Input DataFrame to count nulls in.
+        exclude_columns (List[str]): List of column names to exclude from operations.
+
+    Returns:
+        DataFrame: DataFrame with nulls filled with 0 in non-excluded columns.
+    """
+    for column in df.columns:
+        if column not in exclude_columns:
+            df = df.fillna({column: 0})
+
+    return df
