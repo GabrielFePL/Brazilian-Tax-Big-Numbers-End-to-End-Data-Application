@@ -53,6 +53,8 @@ Use of **Databricks Job Workflows** for ingesting and transforming data:
 - Scheduled execution.  
 - Compatible with the Medallion architecture (bronze, silver, gold).  
 
+---
+
 ### 7. Unity Catalog Documentation  
 Use of descriptions and tags to:  
 - Facilitate understanding and use of the tables.  
@@ -66,10 +68,3 @@ Tool integrated with Databricks that allows:
 - Execution of common queries through natural language.  
 - Support for frequently asked questions about the data (FAQ).  
 - User-friendly interface for business users and analysts.
-
----
-
-### 9. Databricks Dashboards Application  
-Development of interactive dashboards within Databricks for real-time data visualization and insight generation.  
-- These dashboards consume curated data from the Gold layer.  
-- Enable dynamic exploration, performance monitoring, and decision-making support through intuitive visual representations.
